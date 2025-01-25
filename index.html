@@ -10,16 +10,38 @@
   
     <div class="loading-screen">
      <div class="loading-box">
-     <div class="loading-water"></div>
+       <img src="001.png" alt="Bulbasaur Logo" class="loading-logo">
+       <div class="loading-water"></div>
      </div>
     </div>
     <!-- Header -->
     <header class="header">
         <div class="logo-container">
-            <img src="b.png" alt="Logo" class="logo">
+            <img src="bi.png" alt="Logo" class="logo">
             <h1>Bulbasaur Hub</h1>
         </div>
     </header>
+    
+   <!-- Hamburger Menu -->
+   <div class="hamburger-menu" id="hamburgerMenu" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+   </div>
+
+   <!-- Navigation Menu -->
+   <nav class="nav-menu" id="navMenu">
+     <div class="close-button" onclick="toggleMenu()">✖</div>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li id="valentine-item">
+      <a href="valen.html" id="valentine-link">Valentines Card</a>
+      <div id="countdown-timer" class="countdown"></div>
+    </li>
+    <li><a href="#">Coming Soon</a></li>
+    <li><a href="#">Coming Soon</a></li>
+    </ul>
+   </nav>
 
     <!-- Introduction -->
     <section class="introduction">
@@ -53,6 +75,52 @@
             </div>
         </div>
     </section>
+    
+   <section class="update-log">
+    <h2>Update Log</h2>
+    <div class="update-container">
+        <div class="update-entry">
+            <p><strong>[2025-1-11]</strong>
+              Added Valentine's Card. (Will Be Available in Feb 14)
+            </p>
+        </div>
+        
+        <div class="update-entry">
+            <p><strong>[2025-1-2]</strong>
+              Add Menu feature For Bulbasaur Hub.
+            </p>
+        </div>
+        
+        <div class="update-entry">
+            <p><strong>[2025-1-1]</strong>
+              Add a scrolling feature in update log.
+            </p>
+        </div>
+        
+        <div class="update-entry">
+            <p><strong>[2025-1-1]</strong>
+             Add Update Log Feature For Bulbasaur Hub.
+            </p>
+        </div>
+        
+        <div class="update-entry">
+            <p><strong>[2024-12-24]</strong> Added new animations for Bulbasaur loading screen.</p>
+        </div>
+        
+        <div class="update-entry">
+            <p><strong>[2024-12-20]</strong> Improved site responsiveness for mobile devices.</p>
+        </div>
+        
+        <div class="update-entry">
+            <p><strong>[2024-12-15]</strong> Launched the social media links with animations!</p>
+        </div>
+        
+        <div class="update-entry">
+            <p><strong>[2024-12-10]</strong> Initial launch of the Bulbasaur-themed website.</p>
+        </div>
+        <!-- Add more entries as needed -->
+    </div>
+   </section>
 
     <!-- Social Media Links -->
     <section class="social-links">
@@ -62,12 +130,16 @@
         <a href="https://twitter.com" target="_blank" class="social-link twitter">Twitter</a>
         <a href="https://www.tiktok.com/@gar3mty?_t=ZS-8sVwrbmD2O2&_r=1" target="_blank" class="social-link tiktok">TikTok</a>
     </section>
+    
+    <div id="waiting-modal" class="waiting-modal">
+      <p>Please wait till the timer is down!</p>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Bulbasaur Hub. All rights reserved.</p>
     </footer>
     
-    <<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
